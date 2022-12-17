@@ -8,7 +8,7 @@ Ver la clase [java.util.Vector](https://docs.oracle.com/en/java/javase/17/docs/a
 
 ![Collection Framework Hierarchy in Java](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/03/collection-framework-hierarchy-in-java.jpg)
 
-## Diferencia con `ArrayList``
+## Diferencia con `ArrayList`
 
 `ArrayList` y `Vector` son dos clases de la biblioteca de colecciones de Java que se utilizan para almacenar y acceder a una secuencia de elementos de un tipo específico. Ambas clases proporcionan una serie de métodos para facilitar el manejo de sus elementos y son similares en muchos aspectos. Sin embargo, hay algunas diferencias clave entre `ArrayList` y `Vector` que es importante tener en cuenta al elegir qué clase utilizar en un determinado caso.
 
