@@ -27,7 +27,7 @@ La clase `ArrayList` en Java, es una clase que permite almacenar datos en memori
 
 ###### Stack (O)
 
-#### Queue (I)
+#### [Queue (I)](iterable/collection/queue/)
 
 ##### PriorityQueue (O)
 
