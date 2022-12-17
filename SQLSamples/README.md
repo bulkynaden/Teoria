@@ -1,12 +1,10 @@
 # SQL (Structured Query Language)
 
-`SQL` es un lenguaje de programación específico del dominio diseñado para manejar datos en tablas. Fue desarrollado en la década de 1970 y hasta el día de hoy, las interfaces similares a `SQL` son muy populares en diversos sistemas de gestión de datos, no solo en los basados en tablas.
-Entender un lenguaje tan popular es probablemente muy útil. Si eres ingeniero de software, es bueno aprenderlo porque muchos sistemas almacenan y procesan datos de negocios a través de servicios que admiten `SQL`. Por ejemplo, el backend del sistema de información de una compañía de seguros puede utilizar `SQL` para extraer y actualizar datos sobre sus clientes.
-Comenzaremos examinando un ejemplo práctico de cómo puedes utilizar `SQL` para calcular estadísticas. Luego examinaremos lo que significan las letras en el nombre `SQL`.
+`SQL` es un lenguaje de programación específico del dominio diseñado para manejar datos en tablas. Fue desarrollado en la década de 1970 y hasta el día de hoy, las interfaces similares a `SQL` son muy populares en diversos sistemas de gestión de datos, no solo en los basados en tablas. Por ejemplo, el backend del sistema de información de una compañía de seguros puede utilizar `SQL` para extraer y actualizar datos sobre sus clientes.
 
 ## Calculando estadísticas
 
-`SQL` hace más fácil agregar datos y calcular estadísticas. Supongamos que necesitas evaluar los cambios en la popularidad del nombre Jessie entre 1920 y 2000 (inclusive) basándote en datos del censo. Utilizando `SQL`, puedes completar esta tarea con solo 11 líneas de código. Es posible que aún no conozcas la definición exacta de cada palabra clave de `SQL`, así que trata de leerlo como una frase escrita en inglés. Selecciona registros sobre individuos llamados 'Jessie' que nacieron ENTRE 1920 y 2000. Los agrupa por año y género, cuenta el número de registros en cada grupo a través de `COUNT(*)`, y genera una tabla con columnas llamadas año, género y cnt. También ordena la tabla por año y género en orden descendente.
+`SQL` hace más fácil agregar datos y calcular estadísticas. Supongamos que necesitas evaluar los cambios en la popularidad del nombre Jessie entre 1920 y 2000 (inclusive) basándote en datos del censo. Utilizando `SQL`, puedes completar esta tarea con solo 11 líneas de código. Selecciona registros sobre individuos llamados 'Jessie' que nacieron ENTRE 1920 y 2000. Los agrupa por año y género, cuenta el número de registros en cada grupo a través de `COUNT(*)`, y genera una tabla con columnas llamadas año, género y cnt. También ordena la tabla por año y género en orden descendente.
 
 La tabla "censo":
 
@@ -48,7 +46,6 @@ El resultado de la evaluación de la consulta:
 | 2000        | M      | 533  |
 | 2000        | F      | 710  |
 
-`SQL` es el lenguaje de manipulación de datos estándar utilizado por empresas de todo el mundo. Hay mucho que ganar al comprenderlo y mucho que aprender. El mejor lugar para comenzar es con lo básico, así que ahora veamos lo que significa cada letra en el nombre `SQL` para descubrir exactamente con qué estamos tratando.
 
 ## S es para Structured
 
@@ -57,7 +54,7 @@ El resultado de la evaluación de la consulta:
 `SQL` está destinado a ser utilizado con tablas que tienen una estructura particular:
 
 Las tablas contienen filas y columnas. Cada fila es un objeto o entidad que tiene un conjunto de propiedades o atributos. Por ejemplo, la tercera fila contiene datos sobre Willie, un hombre nacido en 1985.
-Los datos a menudo se organizan en un conjunto de tablas, conocido como base de datos. Luego es posible acceder a estas tablas utilizando sus nombres individuales. Por ejemplo, en la base de datos de una tienda en línea, una tabla llamada Clientes probablemente contenga información general sobre los clientes de la empresa: sus nombres y datos de contacto. La tabla Pedidos almacenaría información sobre los pedidos específicos que realizan: nombres de clientes, productos y detalles de pago.
+Los datos a menudo se organizan en un conjunto de tablas, conocido como base de datos. Luego es posible acceder a estas tablas utilizando sus nombres individuales. Por ejemplo, en la base de datos de una tienda en línea, una tabla llamada `Clientes` probablemente contenga información general sobre los clientes de la empresa: sus nombres y datos de contacto. La tabla `Pedidos` almacenaría información sobre los pedidos específicos que realizan: nombres de clientes, productos y detalles de pago.
 
 ## Q es para Query
 
