@@ -28,10 +28,12 @@ La clase `ArrayList` en Java, es una clase que permite almacenar datos en memori
 ###### Stack (O)
 
 #### [Queue (I)](iterable/collection/queue/)
+La interfaz `Queue` es una estructura de datos que permite almacenar elementos secuencialmente y acceder a ellos en orden FIFO (First In, First Out).
 
 ##### PriorityQueue (O)
 
-##### Deque (I)
+##### [Deque (I)](iterable/collection/queue/deque/)
+La interfaz `Deque` permite agregar y eliminar elementos desde ambos extremos de una cola.
 
 ###### ArrayDeque (O)
 
