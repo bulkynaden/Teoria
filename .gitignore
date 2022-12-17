@@ -27,7 +27,3 @@ hs_err_pid*
 **/.DS_Store
 **/.idea
 **/out
-
-# Test
-src/es/dim45/tests/*
-src/es/dim45/genericTest/*
