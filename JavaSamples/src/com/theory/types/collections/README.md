@@ -23,9 +23,10 @@ La clase `ArrayList` en Java, es una clase que permite almacenar datos en memori
 
 ##### LinkedList (O)
 
-##### Vector (O)
+##### [Vector (O)](iterable/collection/list/vector/)
+`Vector` es una clase de la biblioteca de colecciones que se utiliza para almacenar y acceder a una secuencia de elementos de un tipo específico. Los vectores son similares a los `Arrays` en Java, pero tienen un tamaño dinámico que se puede ajustar dinámicamente durante la ejecución del programa.
 
-###### Stack (O)
+###### [Stack (O)](iterable/collection/list/vector/stack/)
 
 #### [Queue (I)](iterable/collection/queue/)
 La interfaz `Queue` es una estructura de datos que permite almacenar elementos secuencialmente y acceder a ellos en orden FIFO (First In, First Out).
