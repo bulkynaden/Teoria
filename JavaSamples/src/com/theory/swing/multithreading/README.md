@@ -1,4 +1,4 @@
-# Multithreading Swing
+# Multithreading en Swing
 
 La programación en Swing no se trata solo de crear ventanas, etiquetas y botones. Crear interfaces es solo una parte del trabajo de los programadores de Swing. Estas interfaces son solo una forma de que el usuario interactúe con el sistema. Desarrollar una aplicación de GUI es más como desarrollar dos aplicaciones. Siempre se debe mantener el frontend separado de las tareas de fondo. Por ejemplo, el frontend no debe congelarse cuando el usuario intenta hacer clic en algo debido a que hay un proceso de fondo en ejecución. Ahí es donde se necesita multihilo. Este es el lado más pesado de las cosas.
 
