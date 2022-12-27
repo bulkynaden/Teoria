@@ -81,15 +81,81 @@ System.out.println(val); // Imprime 25
 
 Ver el paquete [java.util.function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html) para más información.
 
+![Interfaces funcionales](./img/functional-interfaces.png)
+
 ### Consumer
+Cada `Consumer` acepta un valor como parámetro y no devuelve ningún resultado.
+
+```java
+Consumer<String> printer = System.out::println;
+printer.accept("!!!");
+```
+> Imprime "!!!"
 
 ### Supplier
 
+Cada 'Supplier' no acepta ningún parámetro y devuelve un valor.
+
+```java
+Supplier<String> stringSupplier = () -> "Hello";
+stringSupplier.get(); // the result is "Hello" (String)
+
+BooleanSupplier booleanSupplier = () -> true;
+booleanSupplier.getAsBoolean(); // the result is true (boolean)
+
+IntSupplier intSupplier = () -> 33;
+intSupplier.getAsInt(); // the result is 33 (int)
+```
+
 ### Predicate
+
+Cada 'Predicate' acepta un valor como parámetro y devuelve un `boolean`.
+
+```java
+// Character to boolean predicate
+Predicate<Character> isDigit = Character::isDigit;
+isDigit.test('h'); // the result is false (boolean)
+
+// int to boolean predicate
+IntPredicate isEven = val -> val % 2 == 0;
+isEven.test(10); // the result is true (boolean)
+```
 
 ### Function
 
-### UnaryOperator
+Cada `Function` acepta un valor como parámetro y devuelve un valor.
+
+```java
+// String to Integer function
+Function<String, Integer> converter = Integer::parseInt;
+converter.apply("1000"); // the result is 1000 (Integer)
+
+// String to int function
+ToIntFunction<String> anotherConverter = Integer::parseInt;
+anotherConverter.applyAsInt("2000"); // the result is 2000 (int)
+
+// (Integer, Integer) to Integer function
+BiFunction<Integer, Integer, Integer> sumFunction = (a, b) -> a + b;
+sumFunction.apply(2, 3); // it returns 5 (Integer)
+```
+
+### Operator
+
+Cada 'Operator' recibe un valor como parámetro y devuelve un valor del mismo tipo.
+
+```java
+// Long to Long multiplier
+UnaryOperator<Long> longMultiplier = val -> 100_000 * val;
+longMultiplier.apply(2L); // the result is 200_000L (Long)
+
+// int to int operator
+IntUnaryOperator intMultiplier = val -> 100 * val;
+intMultiplier.applyAsInt(10); // the result is 1000 (int)
+
+// (String, String) to String operator
+BinaryOperator<String> appender = (str1, str2) -> str1 + str2;
+appender.apply("str1", "str2"); // the result is "str1str2"
+```
 
 ### Todas las interfaces funcionales
 
