@@ -2,10 +2,7 @@ package com.theory.design.factory;
 
 class Computer {
 
-    private long ram;
-    private long cpu;
-
-    // getters and setters
+    // additional members
 }
 
 class PC extends Computer {
