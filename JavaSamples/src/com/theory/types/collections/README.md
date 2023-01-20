@@ -9,6 +9,8 @@ Java provee de diferentes interfaces y clases para trabajar con las colecciones.
 
 ![Collection Framework Hierarchy in Java](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/03/collection-framework-hierarchy-in-java.jpg)
 
+![Choose the right Collection](./img/collections-dia-4.png)
+
 ## [Iterable (I)](iterable/) 
 Al implementar esta interfaz, permite a un objeto ser recorrido con forEach().
 
