@@ -1,28 +1,29 @@
-package com.theory.swing;
+package com.theory.swing.layout;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class FlowLayoutSample extends JFrame {
+public class GridLayoutSample extends JFrame {
 
-    public FlowLayoutSample() {
-        super("Flow Layout Example");
+    public GridLayoutSample() {
+        super("Grid Layout Example");
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 300);
         setLocationRelativeTo(null);
 
         add(new JButton("First"));
-        add(new JButton("Second"));
+        add(new JButton("Second Button"));
         add(new JTextField("Enter your text here"));
         add(new JLabel("This is a long label"));
         add(new JButton("Third"));
+        add(new JLabel("This is another label"));
 
-        setLayout(new FlowLayout(FlowLayout.LEFT, 20, 20));
+        setLayout(new GridLayout(3, 2, 5, 5));
         setVisible(true);
     }
 
     public static void main(final String[] args) {
-        new FlowLayoutSample();
+        new GridLayoutSample();
     }
 }

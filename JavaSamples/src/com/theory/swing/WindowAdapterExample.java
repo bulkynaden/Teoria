@@ -16,6 +16,7 @@ class WindowAdapterExample extends JFrame {
     public WindowAdapterExample() {
         setSize(300, 300);
         setTitle("Window Listener");
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListener(new CheckOnExit());
 
@@ -31,8 +32,8 @@ class WindowAdapterExample extends JFrame {
     private class ConfirmWindow extends JFrame implements ActionListener {
         public ConfirmWindow() {
             setSize(250, 100);
+            setLocationRelativeTo(null);
             setLayout(new BorderLayout());
-
             JLabel confirmLabel = new JLabel(
                     "Are you sure you want to exit?", SwingConstants.CENTER);
             add(confirmLabel, BorderLayout.CENTER);

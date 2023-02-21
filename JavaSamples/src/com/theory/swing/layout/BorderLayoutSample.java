@@ -1,4 +1,4 @@
-package com.theory.swing;
+package com.theory.swing.layout;
 
 import javax.swing.*;
 import java.awt.*;
